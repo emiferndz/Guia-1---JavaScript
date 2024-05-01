@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        const numero1 = parseFloat(prompt("Ingrese el primer número: "));
+        const numero2 = parseFloat(prompt("Ingrese el segundo número: "));
+        const numero3 = parseFloat(prompt("Ingrese el tercer número: "));
+
+        let mayor = numero1;
+        if (numero2 > mayor) {
+            mayor = numero2;
+        }
+        if (numero3 > mayor) {
+            mayor = numero3;
+        }
+
+        document.write("El mayor número es:", mayor);
+    </script>
+</body>
+</html>

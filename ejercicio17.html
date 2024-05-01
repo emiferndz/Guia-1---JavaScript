@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        const nombrePostulante = prompt("Ingrese el nombre del postulante: ");
+        const totalPreguntas = parseInt(prompt("Ingrese la cantidad total de preguntas: "));
+        const preguntasCorrectas = parseInt(prompt("Ingrese la cantidad de preguntas respondidas correctamente: "));
+
+        const porcentajeAciertos = (preguntasCorrectas / totalPreguntas) * 100;
+
+            if (porcentajeAciertos >= 90) {
+                document.write(`${nombrePostulante} ha obtenido un nivel superior con un ${porcentajeAciertos}% de respuestas correctas.`);
+            } else if (porcentajeAciertos >= 75) {
+                document.write(`${nombrePostulante} ha obtenido un nivel medio con un ${porcentajeAciertos}% de respuestas correctas.`);
+            } else if (porcentajeAciertos >= 50) {
+                document.write(`${nombrePostulante} ha obtenido un nivel regular con un ${porcentajeAciertos}% de respuestas correctas.`);
+            } else {
+                document.write(`${nombrePostulante} está fuera de nivel con un ${porcentajeAciertos}% de respuestas correctas.`);
+            }
+
+    </script>
+</body>
+</html>
